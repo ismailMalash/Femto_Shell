@@ -11,8 +11,7 @@ This project is a simple implementation of a shell program in C, called **Femto 
 1. [Installation](#installation)
 2. [Usage](#usage)
 3. [Example Output](#example-output)
-4. [Code Explanation](#code-explanation)
-5. [Compilation Instructions](#compilation-instructions)
+4. [Compilation Instructions](#compilation-instructions)
 
 ## Installation
 
@@ -69,14 +68,6 @@ Good Bye :)
 - **`exit`** terminates the shell with the message "Good Bye :)".
 - Any command other than **`echo`** or **`exit`** will result in an "Invalid command" message.
 
-## Code Explanation
-
-- **`fgets(cmd, 100, stdin)`**: Reads a line of input from the user into the `cmd` buffer.
-- **`strtok(cmd, " ")`**: Tokenizes the input string by splitting it at spaces. The first token is checked to identify the command.
-- **`strcmp(ptr, "echo")`**: Compares the command with `echo`. If true, the program extracts and prints the rest of the input.
-- **`strcmp(ptr, "exit")`**: Compares the command with `exit`. If true, the shell terminates with a message.
-- **Invalid Command Handling**: If the command doesn't match `echo` or `exit`, the shell prints an "Invalid command" message.
-
 ## Compilation Instructions
 
 1. **To compile the program**, use the following GCC command:
@@ -89,7 +80,5 @@ Good Bye :)
 
    ```bash
    ./myFemtoShell
-- **Spacing between commands**: Each command is separated for clarity, making it easier to follow.
-- **Bullet points for easy readability**.
 
-This updated version should display correctly in your GitHub repository.
+
