@@ -12,30 +12,28 @@ int main(void) {
 	while(!close)
 	{
 	
-		printf("ismail's_shell $");
-
+		printf("ismail's_shell $ ");
 
 		fgets(cmd, 100, stdin);
 
-		char *ptr = strtok(cmd, " ");
+		cmd[strcspn(cmd, "\n")] = 0;
+
+		if (strlen(cmd) == 0)	//for no command input
+		{continue;}
+
+		ptr = strtok(cmd, " ");
 
 		if (!strcmp(ptr, "echo"))
 		{
-			message = 5 + cmd;		//skipping printing echo text
-			printf("%s",message); //we didn't put \n here because message string contains \n before '\0' as fgets stores it
+			message = 5 + cmd;		//skip printing echo text
+			printf("%s\n",message); 
 		}
 
-		else if (!strcmp(ptr, "echo\n"))
-		{
-			printf("\n");
-		}
-
-		else if (!strcmp(ptr, "exit\n"))
+		else if (!strcmp(ptr, "exit"))
 		{
 			close = 1;
-			printf("Good Bye :)\n");
+			printf("Good Bye\n");
 		}
-
 		else
 		{
 			printf("Invalid command\n");
