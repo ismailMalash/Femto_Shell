@@ -1,13 +1,20 @@
-# Femto_Shell
-very simple shell that only executes two commands (echo, exit)
+Usage
+Compile the program using GCC (or another C compiler):
 
-Compilation Instructions
+bash
+Copy
 gcc -o myFemtoShell myFemtoShell.c
-This will generate an executable file named myFemtoShell.
-Running the Program
+Run the shell:
 
-After compilation, you can run the shell with the following command:
+bash
+Copy
 ./myFemtoShell
+The shell will display a prompt (ismail's_shell $) and wait for you to enter commands.
+
+Example Output
+Sample Shell Session:
+rust
+Copy
 ismail's_shell $ echo Hello my shell
 Hello my shell
 ismail's_shell $ echo what can you do?
@@ -18,3 +25,7 @@ ismail's_shell $ ls
 Invalid command
 ismail's_shell $ exit
 Good Bye :)
+Features:
+echo prints any string the user inputs.
+exit terminates the shell with the message "Good Bye :)".
+Any command other than echo or exit will result in an "Invalid command" message.
