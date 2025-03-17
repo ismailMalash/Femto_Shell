@@ -1,9 +1,3 @@
-It seems like the README file wasn't formatted properly, and the text appears as one big block. I'll provide a corrected version with proper line breaks to make it more readable and structured.
-
-Here’s an improved version of your README file with clear formatting and line breaks:
-
----
-
 # Femto Shell (myFemtoShell)
 
 This project is a simple implementation of a shell program in C, called **Femto Shell**, that supports basic built-in commands like `echo` and `exit`. When executed, it prompts the user to enter commands, processes them, and responds accordingly. This shell handles the following features:
@@ -95,16 +89,6 @@ Good Bye :)
 
    ```bash
    ./myFemtoShell
-   ```
-
-## License
-
-This project is open-source and available under the MIT License. Feel free to contribute!
-
----
-
-### Key Improvements:
-- **Proper line breaks**: The content is now split into readable sections with headers and explanations for each part.
 - **Spacing between commands**: Each command is separated for clarity, making it easier to follow.
 - **Bullet points for easy readability**.
 
