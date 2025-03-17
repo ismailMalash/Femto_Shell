@@ -9,7 +9,6 @@ Running the Program
 After compilation, you can run the shell with the following command:
 ./myFemtoShell
 ismail's_shell $ echo Hello my shell
-
 Hello my shell
 ismail's_shell $ echo what can you do?
 what can you do?
